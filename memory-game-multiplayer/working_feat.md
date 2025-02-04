@@ -1,0 +1,1 @@
+Curiously enough, after informing chat of the contents of the current game, and letting it know what the end goal was, it was able to get it quite quikly. It did a nice and clean implementation of the  project with the multiplayer functionality. It only added functions to keep track of players,their turns, and scores. 

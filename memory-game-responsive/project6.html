@@ -1,22 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Memory Matching Game</title>
-  <link rel="stylesheet" href="project6.css">
+  <link rel="stylesheet" href="project6.css" />
 </head>
 <body>
+
+  <!-- 🥝 Fullscreen Fruit Border (positioned behind game) -->
+  <div class="fruit-border">
+    <!-- Place fruit around edges however you like, e.g.: -->
+    <span class="fruit bounce-dance" style="top:10px; left:20px;">🍓</span>
+    <span class="fruit pivot-dance"  style="top:10px; right:20px;">🍎</span>
+    <span class="fruit surprise-dance" style="bottom:10px; left:20px;">🍉</span>
+    <span class="fruit top-pivot-dance" style="bottom:10px; right:20px;">🍒</span>
+    <!-- Add more, or position them in a loop with JS, etc. -->
+  </div>
+
+  <!-- 🎮 Square Game Container, forced to 80vmin x 80vmin -->
   <div class="game-container">
     <h1>Memory Matching Game</h1>
+
     <div class="info">
       <p>Moves: <span id="move-counter">0</span></p>
       <p>Time: <span id="timer">0:00</span></p>
     </div>
+
     <div class="grid" id="game-grid"></div>
-    <button id="start-button">Start Game</button>
-    <button id="restart-button" disabled>Restart Game</button>
+
+    <div class="controls">
+      <button id="start-button">Start Game</button>
+      <button id="restart-button" disabled>Restart Game</button>
+    </div>
   </div>
+
+  <!-- JavaScript -->
   <script src="project6.js"></script>
 </body>
 </html>
